@@ -1,14 +1,6 @@
-<!--
- * @Descripttion: 神之一手
- * @version: 1.0.0
- * @Author: null
- * @Date: 2022-07-23 10:46:54
- * @LastEditors: sueRimn
- * @LastEditTime: 2022-07-23 11:43:07
--->
-# tankts README
+# json2ts README
 
-This is the README for your extension "tankts". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "json2ts". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
