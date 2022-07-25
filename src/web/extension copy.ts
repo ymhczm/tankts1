@@ -4,11 +4,11 @@
  * @Author: null
  * @Date: 2022-07-23 17:26:19
  * @LastEditors: sueRimn
- * @LastEditTime: 2022-07-25 20:57:49
+ * @LastEditTime: 2022-07-25 16:23:49
  */
 import * as vscode from "vscode";
-import * as webviewTool from "vscode-webview-tool";
-
+import * as fs from "fs";
+import * as path from "path";
 export function activate(context: vscode.ExtensionContext) {
   console.log(
     'Congratulations, your extension "json2ts" is now active in the web extension host!'
@@ -24,15 +24,40 @@ export function activate(context: vscode.ExtensionContext) {
         retainContextWhenHidden: true, // webview被隐藏时保持状态，避免被重置
       } // Webview options. More on these later.
     );
-    console.log(getWebviewContent());
-    panel.webview.html = getWebviewContent();
+    // const html = getWebViewContent(context, "build/index.html");
+    panel.webview.html = getWebViewContent(context, "build/index.html");
     vscode.window.showErrorMessage(new Date().toLocaleString());
     vscode.window.showInformationMessage("test world   hello uuu");
   });
 
   context.subscriptions.push(disposable);
 }
-
+function getWebViewContent(
+  context: vscode.ExtensionContext,
+  templatePath: string
+) {
+  console.log(1111);
+  const resourcePath = path.join(context.extensionPath, templatePath);
+  console.log(resourcePath, 2222);
+  const dirPath = path.dirname(resourcePath);
+  console.log(dirPath, 3333);
+  let html = fs.readFileSync(resourcePath, "utf-8");
+  console.log(html, 44444);
+  // vscode不支持直接加载本地资源，需要替换成其专有路径格式，这里只是简单的将样式和JS的路径替换
+  html = html.replace(
+    /(<link.+?href="|<script.+?src="|<img.+?src=")(.+?)"/g,
+    (m: any, $1: string, $2: any) => {
+      return (
+        $1 +
+        vscode.Uri.file(path.resolve(dirPath, $2))
+          .with({ scheme: "vscode-resource" })
+          .toString() +
+        '"'
+      );
+    }
+  );
+  return html;
+}
 function getWebviewContent() {
   return `<!DOCTYPE html>
 		<html lang="en">
@@ -48,5 +73,4 @@ function getWebviewContent() {
 		</body>
 		</html>`;
 }
-
 export function deactivate() {}

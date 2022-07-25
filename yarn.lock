@@ -1347,6 +1347,11 @@ fs.realpath@^1.0.0:
   resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
+fs@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
+  integrity sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==
+
 fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/fsevents/-/fsevents-2.3.2.tgz"
@@ -2259,6 +2264,11 @@ parseurl@^1.3.2:
   resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/parseurl/-/parseurl-1.3.3.tgz"
   integrity sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ==
 
+path-browserify@^1.0.1:
+  version "1.0.1"
+  resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/path-browserify/-/path-browserify-1.0.1.tgz#d98454a9c3753d5790860f16f68867b9e46be1fd"
+  integrity sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==
+
 path-exists@^4.0.0:
   version "4.0.0"
   resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/path-exists/-/path-exists-4.0.0.tgz"
@@ -2288,6 +2298,14 @@ path-type@^4.0.0:
   version "4.0.0"
   resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/path-type/-/path-type-4.0.0.tgz"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
+
+path@^0.12.7:
+  version "0.12.7"
+  resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/path/-/path-0.12.7.tgz#d4dc2a506c4ce2197eb481ebfcd5b36c0140b10f"
+  integrity sha512-aXXC6s+1w7otVF9UletFkFcDsJeO7lSZBPUQhtb5O0xJe8LtYhj/GxldoL09bBj9+ZmE2hNoHqQSFMN5fikh4Q==
+  dependencies:
+    process "^0.11.1"
+    util "^0.10.3"
 
 pend@~1.2.0:
   version "1.2.0"
@@ -2355,7 +2373,7 @@ process-nextick-args@~2.0.0:
   resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-process@^0.11.10:
+process@^0.11.1, process@^0.11.10:
   version "0.11.10"
   resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/process/-/process-0.11.10.tgz"
   integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
@@ -2805,6 +2823,13 @@ util-deprecate@~1.0.1:
   resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
+util@^0.10.3:
+  version "0.10.4"
+  resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/util/-/util-0.10.4.tgz#3aa0125bfe668a4672de58857d3ace27ecb76901"
+  integrity sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==
+  dependencies:
+    inherits "2.0.3"
+
 util@^0.12.0:
   version "0.12.4"
   resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/util/-/util-0.12.4.tgz"
@@ -2831,6 +2856,11 @@ vscode-uri@^3.0.3:
   version "3.0.3"
   resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/vscode-uri/-/vscode-uri-3.0.3.tgz"
   integrity sha512-EcswR2S8bpR7fD0YPeS7r2xXExrScVMxg4MedACaWHEtx9ftCF/qHG1xGkolzTPcEmjTavCQgbVzHUIdTMzFGA==
+
+vscode-webview-tool@^1.0.4:
+  version "1.0.4"
+  resolved "https://artifactory.cloud.ingka-system.cn:443/artifactory/api/npm/cn-digital-hub-npm-virtual/vscode-webview-tool/-/vscode-webview-tool-1.0.4.tgz#93264fe40afc973062dc01994d33b2c2a1989201"
+  integrity sha512-ZUlGCpUv2qh6dk2IDvMFqQ6dUrLiegVjCjnWZh4N35OfG6bMwmDGS+ps2C/8UzIN2+j912TfyJOK+MHGhaF7BQ==
 
 vue-demi@*:
   version "0.13.5"
